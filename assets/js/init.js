@@ -5,7 +5,11 @@ $.getJSON("./assets/res/items.json", function (data) {
     data.map(function (item) {
         try {
             let local = new Object();
-            local.name = item.LocalizedNames.enus;
+            const delim = "@"
+            const name = item.UniqueName
+            const tier = name.split(delim).slice(1).join(delim) 
+            const itenName = item.LocalizedNames.enus + " Tier " + tier
+            local.name = itenName;
             local.value = item.UniqueName;
             array.push(local);
         } catch (error) {
@@ -55,7 +59,7 @@ function pesquisa() {
     $.each($("#locais option:selected"), function(){
         locais += $(this).val() + ',';
     });
-    let URL = "https://www.albion-online-data.com/api/v2/stats/prices/"+item+'?locations='+locais+'&qualities='+qualidade;
+    let URL = "https://www.albion-online-data.com/api/v2/stats/prices/"+item+'?locations='+locais+'&qualities='+qualidade +tier';
     $.ajax({url: URL, success: function(result){
         
         console.log(result)
