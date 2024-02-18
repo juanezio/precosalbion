@@ -5,7 +5,7 @@ $.getJSON("./assets/res/items.json", function (data) {
     data.map(function (item) {
         try {
             let local = new Object();
-            local.name = item.LocalizedNames.EN-US;
+            local.name = item.LocalizedNames.enus;
             local.value = item.UniqueName;
             array.push(local);
         } catch (error) {
