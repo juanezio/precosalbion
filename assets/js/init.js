@@ -8,8 +8,7 @@ $.getJSON("./assets/res/items.json", function (data) {
             const delim = "@"
             const name = item.UniqueName
             const tier = name.split(delim).slice(1).join(delim) 
-            const itenName = local.item.LocalizedNames.enus + " Tier " + tier
-            local.name = itenName;
+            local.name = item.LocalizedNames.enus + " Tier " + tier;
             local.value = item.UniqueName;
             array.push(local);
         } catch (error) {
