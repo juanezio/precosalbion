@@ -58,7 +58,7 @@ function pesquisa() {
     $.each($("#locais option:selected"), function(){
         locais += $(this).val() + ',';
     });
-    let URL = "https://www.albion-online-data.com/api/v2/stats/prices/"+item+'?locations='+locais+'&qualities='+qualidade';
+    let URL = "https://www.albion-online-data.com/api/v2/stats/prices/"+item+'?locations='+locais+'&qualities='+qualidade;
     $.ajax({url: URL, success: function(result){
         
         console.log(result)
