@@ -5,10 +5,10 @@ $.getJSON("./assets/res/items.json", function (data) {
     data.map(function (item) {
         try {
             let local = new Object();
-            const delim = "@"
-            const name = item.UniqueName
-            const tier = name.split(delim).slice(1).join(delim) 
-            local.name = item.LocalizedNames.enus + " ." + tier;
+            let delim = "@"
+            let name = item.UniqueName
+            let tier = name.split(delim).slice(1).join(delim) 
+            local.name = "." + tier + item.LocalizedNames.enus;
             local.value = item.UniqueName;
             array.push(local);
         } catch (error) {
