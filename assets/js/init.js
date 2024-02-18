@@ -65,7 +65,7 @@ function pesquisa() {
 
         result.map(function (r) {
             let componente = '<li class="list-group-item d-flex justify-content-between lh-condensed">'
-            +'<div class="row"><div class="col-md-12"><h6 class="my-0"><strong>'+r.city+' Qualidade: '+r.qualidade</strong></h6></div>'
+            +'<div class="row"><div class="col-md-12"><h6 class="my-0"><strong>'+r.city+</strong></h6></div>'
             +'<div class="col-md-12">'
               
               +'<small id="sellMin" class="text-muted">Preço de Venda mínimo: '+r.sell_price_min+' || Data: '+r.sell_price_min_date+' UTC</small><br>'
