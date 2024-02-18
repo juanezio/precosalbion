@@ -71,8 +71,8 @@ function pesquisa() {
               +'<small id="sell_price_max_date" class="text-muted">Data do Preço de Venda máximo: '+r.sell_price_max_date+'UTC</small><br>'
               +'<small id="buyMin" class="text-muted">Preço de Compra mínimo: '+r.buy_price_min+'</small><br>'
               +'<small id="buy_price_min_date" class="text-muted">Data do Preço de Compra mínimo: '+r.buy_price_min_date+'UTC</small><br>'
-              +'<small id="buyMax" class="text-muted">Preço de Compra máximo: '+r.buy_price_max+'</small>'
-              +'<small id="buy_price_max_date" class="text-muted">Data do Preço de Compra máximo: '+r.buy_price_max_date+'UTC</small><br>'
+              +'<small id="buyMax" class="text-muted">Preço de Compra máximo: '+r.buy_price_max+'</small><br>'
+              +'<small id="buy_price_max_date" class="text-muted">Data do Preço de Compra máximo: '+r.buy_price_max_date+'UTC</small>'
             +'</div></div>'
           +'</li>';
 
